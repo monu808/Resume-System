@@ -239,7 +239,56 @@ npm run dev
 
 ---
 
-## 🔌 API Endpoints
+## � Deployment
+
+### Netlify Deployment (Frontend)
+
+1. **Push to GitHub**:
+```bash
+git add .
+git commit -m "Ready for deployment"
+git push origin main
+```
+
+2. **Connect to Netlify**:
+   - Go to [Netlify](https://app.netlify.com/)
+   - Click "Add new site" → "Import an existing project"
+   - Connect your GitHub repository
+   - Configure build settings:
+     - **Base directory**: `client`
+     - **Build command**: `npm run build`
+     - **Publish directory**: `client/dist`
+
+3. **Set Environment Variables** in Netlify:
+   - Go to Site settings → Environment variables
+   - Add your backend API URL:
+     - Key: `VITE_API_URL`
+     - Value: `https://your-backend-url.com`
+
+4. **Update `netlify.toml`**:
+   - Edit the API redirect in `netlify.toml` to point to your backend URL
+
+### Railway/Render Deployment (Backend)
+
+1. **Deploy Backend** to Railway or Render
+2. **Set Environment Variables**:
+   - `MONGODB_URI`: Your MongoDB Atlas connection string
+   - `JWT_SECRET`: Your JWT secret key
+   - `PORT`: 5000
+   - `NODE_ENV`: production
+
+3. **Copy Backend URL** and update frontend environment variables
+
+### MongoDB Atlas Setup
+
+1. Create a free cluster at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+2. Add your IP address to whitelist (or allow access from anywhere for testing)
+3. Create a database user
+4. Get your connection string and update `MONGODB_URI`
+
+---
+
+## �🔌 API Endpoints
 
 ### Authentication
 

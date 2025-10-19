@@ -1,0 +1,47 @@
+# Netlify Configuration File
+
+[build]
+  # Build command - adjust this based on your setup
+  command = "npm run build"
+  
+  # Publish directory - where your built files are
+  publish = "client/dist"
+  
+  # Base directory
+  base = "/"
+
+[build.environment]
+  # Node version
+  NODE_VERSION = "18"
+  
+  # Production environment
+  NODE_ENV = "production"
+
+# Secrets scanning configuration
+# Exclude standard environment variable names that aren't actually secrets
+[build.processing.secrets]
+  omit_keys = ["NODE_ENV", "PORT", "development"]
+  
+  # Don't scan node_modules and .netlify folders
+  omit_paths = [
+    "node_modules/**",
+    ".netlify/**",
+    "**/node_modules/**",
+    "client/node_modules/**",
+    "server/node_modules/**",
+    "**/.env.example"
+  ]
+
+# Redirect API calls to your backend server
+# Adjust the backend URL to your deployed backend
+[[redirects]]
+  from = "/api/*"
+  to = "https://your-backend-url.com/api/:splat"
+  status = 200
+  force = true
+
+# SPA fallback - all routes go to index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
