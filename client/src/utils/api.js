@@ -1,12 +1,18 @@
 import axios from 'axios';
 
+// Determine if we're in production by checking multiple indicators
+const isProduction = import.meta.env.PROD || 
+                     import.meta.env.MODE === 'production' || 
+                     window.location.hostname.includes('vercel.app');
+
 // Use relative URL in production (Vercel), localhost in development
-const API_URL = import.meta.env.VITE_API_URL || 
-                (import.meta.env.PROD ? '' : 'http://localhost:5000');
+const API_URL = import.meta.env.VITE_API_URL || (isProduction ? '' : 'http://localhost:5000');
 
 // Debug: Log the API URL and environment
 console.log('🔧 API Configuration:', {
   API_URL,
+  isProduction,
+  hostname: window.location.hostname,
   VITE_API_URL: import.meta.env.VITE_API_URL,
   PROD: import.meta.env.PROD,
   MODE: import.meta.env.MODE,
