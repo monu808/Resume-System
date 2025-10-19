@@ -1,0 +1,29 @@
+# Dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build
+dist
+build
+.cache
+
+# Netlify (we're using Vercel now)
+.netlify
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documentation
+*.md
+!README.md
