@@ -1,0 +1,148 @@
+{
+  "userData": {
+    "name": "Sarah Johnson",
+    "email": "sarah.johnson@example.com",
+    "role": "Full Stack Developer",
+    "password": "demo123"
+  },
+  "resumeData": {
+    "skills": [
+      "JavaScript",
+      "TypeScript",
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "PostgreSQL",
+      "Python",
+      "Docker",
+      "AWS",
+      "Git",
+      "REST APIs",
+      "GraphQL",
+      "Tailwind CSS",
+      "Jest"
+    ],
+    "projects": [
+      {
+        "title": "E-commerce Platform",
+        "description": "Developed a full-stack e-commerce solution with payment integration, user authentication, and real-time inventory management. Implemented microservices architecture for scalability.",
+        "technologies": ["React", "Node.js", "MongoDB", "Stripe", "Docker", "AWS"],
+        "link": "https://github.com/sarahjohnson/ecommerce-platform"
+      },
+      {
+        "title": "Task Management System",
+        "description": "Built a collaborative task management application with real-time updates using WebSockets. Features include drag-and-drop interface, team collaboration, and analytics dashboard.",
+        "technologies": ["React", "TypeScript", "Socket.io", "PostgreSQL", "Redux"],
+        "link": "https://github.com/sarahjohnson/task-manager"
+      },
+      {
+        "title": "Weather Forecast App",
+        "description": "Created a responsive weather application that provides real-time weather data and 7-day forecasts using external APIs. Implemented geolocation features and offline caching.",
+        "technologies": ["React", "OpenWeather API", "PWA", "Service Workers"],
+        "link": "https://weather-app-sarah.netlify.app"
+      },
+      {
+        "title": "Social Media Analytics Dashboard",
+        "description": "Designed and developed an analytics platform for social media metrics with data visualization, automated reports, and ML-based insights for engagement optimization.",
+        "technologies": ["Python", "Flask", "React", "D3.js", "TensorFlow", "MongoDB"],
+        "link": "https://github.com/sarahjohnson/social-analytics"
+      }
+    ],
+    "courses": [
+      {
+        "title": "Complete Web Development Bootcamp",
+        "provider": "Udemy",
+        "completionDate": "2022-03-15",
+        "certificate": "https://www.udemy.com/certificate/UC-xxxxx"
+      },
+      {
+        "title": "Advanced React and Redux",
+        "provider": "Udemy",
+        "completionDate": "2022-06-20",
+        "certificate": "https://www.udemy.com/certificate/UC-xxxxx"
+      },
+      {
+        "title": "Node.js - The Complete Guide",
+        "provider": "Udemy",
+        "completionDate": "2022-09-10",
+        "certificate": "https://www.udemy.com/certificate/UC-xxxxx"
+      },
+      {
+        "title": "AWS Certified Solutions Architect",
+        "provider": "AWS Training",
+        "completionDate": "2023-01-25",
+        "certificate": "https://aws.amazon.com/certification/xxxxx"
+      },
+      {
+        "title": "Machine Learning Specialization",
+        "provider": "Coursera",
+        "completionDate": "2023-05-14",
+        "certificate": "https://www.coursera.org/account/accomplishments/xxxxx"
+      },
+      {
+        "title": "Docker and Kubernetes: The Complete Guide",
+        "provider": "Udemy",
+        "completionDate": "2023-08-30",
+        "certificate": "https://www.udemy.com/certificate/UC-xxxxx"
+      }
+    ],
+    "achievements": [
+      {
+        "title": "Hackathon Winner - TechCon 2023",
+        "description": "First place in regional coding competition with a team of 4, building an AI-powered resume optimization tool in 24 hours.",
+        "date": "2023-08-15"
+      },
+      {
+        "title": "Open Source Contributor",
+        "description": "Active contributor to React.js and Node.js open source projects with over 50 merged pull requests.",
+        "date": "2023-01-01"
+      },
+      {
+        "title": "Tech Speaker",
+        "description": "Delivered presentation on 'Modern Web Development Practices' at Regional Developer Conference 2023, attended by 200+ developers.",
+        "date": "2023-10-20"
+      },
+      {
+        "title": "Employee of the Quarter",
+        "description": "Recognized for exceptional performance and leading the successful migration of legacy systems to microservices architecture.",
+        "date": "2023-03-30"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Science in Computer Science",
+        "institution": "University of Technology",
+        "year": "2018-2022",
+        "gpa": "3.8/4.0"
+      },
+      {
+        "degree": "Full Stack Web Development Certification",
+        "institution": "Coding Bootcamp",
+        "year": "2022",
+        "gpa": ""
+      }
+    ],
+    "experience": [
+      {
+        "company": "TechCorp Solutions",
+        "position": "Senior Full Stack Developer",
+        "duration": "Jan 2023 - Present",
+        "description": "Lead development of enterprise web applications, mentor junior developers, and architect scalable solutions using MERN stack. Reduced application load time by 40% through optimization."
+      },
+      {
+        "company": "StartupXYZ",
+        "position": "Full Stack Developer",
+        "duration": "Jun 2022 - Dec 2022",
+        "description": "Developed and maintained multiple web applications for clients. Collaborated with cross-functional teams to deliver high-quality software solutions on time and within budget."
+      },
+      {
+        "company": "Freelance Developer",
+        "position": "Web Developer",
+        "duration": "Jan 2021 - May 2022",
+        "description": "Built custom websites and web applications for small businesses and startups. Managed complete project lifecycle from requirements gathering to deployment and maintenance."
+      }
+    ],
+    "summary": "Sarah Johnson is a passionate Full Stack Developer with expertise in JavaScript, TypeScript, React.js, Node.js, Express.js, MongoDB, PostgreSQL, Python, Docker, AWS, Git, REST APIs, GraphQL, Tailwind CSS, Jest. With hands-on experience in 4 projects and 3 positions of professional experience, Sarah demonstrates continuous learning through 6 completed courses and has earned 4 notable achievements. Known for delivering high-quality solutions and staying current with industry trends."
+  }
+}
