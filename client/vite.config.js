@@ -13,4 +13,9 @@ export default defineConfig({
       },
     },
   },
+  build: {
+    // Ensure production mode is set
+    minify: 'esbuild',
+    sourcemap: false,
+  },
 })

@@ -4,6 +4,15 @@ import axios from 'axios';
 const API_URL = import.meta.env.VITE_API_URL || 
                 (import.meta.env.PROD ? '' : 'http://localhost:5000');
 
+// Debug: Log the API URL and environment
+console.log('🔧 API Configuration:', {
+  API_URL,
+  VITE_API_URL: import.meta.env.VITE_API_URL,
+  PROD: import.meta.env.PROD,
+  MODE: import.meta.env.MODE,
+  DEV: import.meta.env.DEV
+});
+
 // Create axios instance
 const api = axios.create({
   baseURL: API_URL,
